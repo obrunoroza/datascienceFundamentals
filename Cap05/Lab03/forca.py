@@ -133,17 +133,17 @@ class Forca(object):
 def gera_palavra() -> str:
     with open('palavras.txt', mode='r') as arquivo:
         cofre = arquivo.readlines()
-        return cofre[randint(0, len(cofre))].strip()
+    return cofre[randint(0, len(cofre))].strip()
 
 
 # função principal
 def main():
 
-    jogo = Forca(gera_palavra())
+    jogo: Forca = Forca(gera_palavra())
 
     while not jogo.fim_de_jogo():
         jogo.estado_do_jogo()
-        letra = input("\nDigite uma letra: ")
+        letra: str = input("\nDigite uma letra: ")
         jogo.verifica_letra(letra)
 
     jogo.estado_do_jogo()
