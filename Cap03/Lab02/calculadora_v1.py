@@ -8,26 +8,29 @@ from time import sleep
 
 
 def valida_operacao() -> int:
-    try:
-        operacao: int = int(input())
-        if operacao >= 1 and operacao <= 5:
-            return operacao
-        else:
+    while True:
+        try:
+            operacao: int = int(input("Escolha a operação:  "))
+            if operacao >= 1 and operacao <= 5:
+                return operacao
+            else:
+                print("Operação invalida!")
+                sleep(1)                
+        except ValueError:
             print("Operação invalida!")
             sleep(1)
-            exit(0)
-    except ValueError:
-        print("Operação invalida!")
-        sleep(1)
+        continue
 
 
 def valida_number() -> float:
-    try:
-        number: float = float(input(f"Digite um numero: "))
-        return number
-    except ValueError:
-        print("Numero invalido!")
-        sleep(1)
+    while True:
+        try:
+            number: float = float(input(f"Digite um numero: "))
+            return number
+        except ValueError:
+            print("Numero invalido!")
+            sleep(1)
+        continue
 
 
 def realiza_operacao(n1: float, n2: float, op: int) -> str:
@@ -56,7 +59,6 @@ def main() -> None:
     print("[3] - Multiplicação")
     print("[4] - Divisão")
     print("[5] - Sair\n")
-    print("Escolha a operação:  ")
 
     operacao: int = valida_operacao()
     number1: float = valida_number()
