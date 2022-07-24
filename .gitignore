@@ -1,3 +1,6 @@
+.idea/
+.vscode/
+
 Cap01/.ipynb_checkpoints/
 Cap01/JupyterNotebook-ManualUsuario.ipynb
 Cap01/hello.py
@@ -9,7 +12,6 @@ Cap03/Notebooks/.ipynb_checkpoints/
 Cap03/Notebooks/DSA-Python-Cap03-Exercicios-Funcoes-Solucao.ipynb
 Cap03/Notebooks/DSA-Python-Cap03-Exercicios-Loops-Condiconais-Solucao.ipynb
 Cap03/Notebooks/binary.csv
-.vscode/
 Cap04/Lab02/
 Cap04/Notebooks/.ipynb_checkpoints/
 Cap04/Notebooks/DSA-Python-Cap04-Exercicios-Solucao.ipynb
@@ -24,3 +26,10 @@ Cap06/Notebooks/dsa.db
 Cap06/Notebooks/escola.db
 Cap06/Notebooks/imagens/
 Cap06/Notebooks/imdb.db
+Cap07/DeepLearningBook/
+Cap07/DesafioDSA/Missao1/.ipynb_checkpoints/
+Cap07/DesafioDSA/Missao2/.ipynb_checkpoints/
+Cap07/DesafioDSA/Missao3/.ipynb_checkpoints/
+Cap07/DesafioDSA/Missao4/.ipynb_checkpoints/
+Cap07/DesafioDSA/Missao5/.ipynb_checkpoints/
+Cap07/DesafioDSA/Missao5/dados_compras.json
